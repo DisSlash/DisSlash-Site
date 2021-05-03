@@ -15,9 +15,6 @@ def features():
 def statistics():
     return render_template("statistics.html")
 
-@app.route('/invite')
-def invite():
-    return render_template("invite.html")
 
 @app.errorhandler(404)
 def page_no_found(e):
