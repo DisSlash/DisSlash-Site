@@ -16,5 +16,5 @@ def statistics():
     return render_template("statistics.html")
 
 @app.route('/dev')
-def statistics():
+def error():
     return render_template("404.html")
