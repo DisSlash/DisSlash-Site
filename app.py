@@ -15,6 +15,6 @@ def features():
 def statistics():
     return render_template("statistics.html")
 
-@app.route('/404')
+@app.route('/dev')
 def statistics():
     return render_template("404.html")
