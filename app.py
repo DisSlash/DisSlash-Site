@@ -14,3 +14,7 @@ def features():
 @app.route('/statistics')
 def statistics():
     return render_template("statistics.html")
+
+@app.route('/404')
+def statistics():
+    return render_template("404.html")
