@@ -15,6 +15,6 @@ def features():
 def statistics():
     return render_template("statistics.html")
 
-@app.route('/dev')
-def error():
-    return render_template("404.html")
+@app.errorhandler(404)
+def page_no_found(e):
+    return render_template("404.html"), 404
