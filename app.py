@@ -23,6 +23,11 @@ def invite():
 def commands():
     return render_template("commands.html")
 
+@app.route("/rickroll")
+def rickroll():
+    return render_template("rickroll.html")
+    
+
 @app.errorhandler(404)
 def page_no_found(e):
     return render_template("404.html"), 404
