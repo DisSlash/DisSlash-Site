@@ -19,6 +19,9 @@ def statistics():
 def invite():
     return render_template("invite.html")
 
+@app.route('/commands')
+def commands():
+    return render_template("commands.html")
 
 @app.errorhandler(404)
 def page_no_found(e):
