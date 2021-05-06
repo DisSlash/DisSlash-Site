@@ -37,7 +37,7 @@
   width: 100%;
 }
 
-.top1bar a1 {
+.top1bar a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -47,12 +47,12 @@
   font-size: 17px;
 }
 
-.top1bar a:hover1 {
+.top1bar a:hover {
   background: #f1f1f1;
   color: black;
 }
 
-.top1bar a.active1 {
+.top1bar a.active {
   background-color: #04AA6D;
   color: white;
 }
