@@ -24,9 +24,9 @@ def commands():
     return render_template("commands.html")
 
 
-@app.route('/terms')
+@app.route('/privacy')
 def terms():
-    return render_template("terms.html")
+    return render_template("privacy.html")
 
 @app.route("/rickroll")
 def rickroll():
