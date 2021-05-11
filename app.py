@@ -31,7 +31,10 @@ def terms():
 @app.route("/rickroll")
 def rickroll():
     return render_template("rickroll.html")
-    
+ 
+@app.route('/support')
+def support():
+    return render_template('support.html')
 
 @app.errorhandler(404)
 def page_no_found(e):
