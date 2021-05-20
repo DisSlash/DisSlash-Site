@@ -1,7 +1,8 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 
 app = Flask(__name__)
 
+NAME = os.environ["NAME"]
 
 @app.route('/')
 def home():
@@ -35,6 +36,13 @@ def rickroll():
 @app.route('/support')
 def support():
     return render_template('support.html')
+
+@app.route('/owner/<name>')
+def owner(name=None):
+    if name == NAME:
+        return render_template('owner.html')
+    else:
+        return render_template('invite.html')
 
 @app.errorhandler(404)
 def page_no_found(e):
