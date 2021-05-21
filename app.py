@@ -38,6 +38,11 @@ def rickroll():
 def support():
     return render_template('support.html')
 
+@app.route('/owner')
+def ownerFlase():
+    return render_template('invite.html')
+
+
 @app.route('/owner/<name>')
 def owner(name=None):
     if name == NAME:
