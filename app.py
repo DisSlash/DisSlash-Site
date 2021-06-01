@@ -35,7 +35,7 @@ def login():
     user_name, user_discrim, user_avatar, user_id = user.get("username"), user.get("discriminator"), user.get("avatar"), user.get("id")
     user_avatar_url = f"https://cdn.discordapp.com/avatars/{user_id}/{user_avatar}.png"
     user_discrim = str(user_discrim)
-    userName = user_name + "#" + user_discrim
+    userName = user_name
     print(userName)
     return render_template('dashboard.html', user_avatar_url=user_avatar_url, user_tag=userName)
 
