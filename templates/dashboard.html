@@ -42,6 +42,34 @@
   background-color: #04AA6D;
   color: white;
 }
+.circular--square {
+      border-top-left-radius: 50% 50%;
+      border-top-right-radius: 50% 50%;
+      border-bottom-right-radius: 50% 50%;
+      border-bottom-left-radius: 50% 50%;
+      position: relative;
+      position: absolute;
+      top: 20px;
+      right: 180px;
+}
+
+.login-box {
+    position: relative;
+    position: absolute;
+    top: 35px;
+    right: 50px;
+}
+
+.oval {
+    width: 200px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 40px;
+    position: relative;
+    position: absolute;
+    top: 13px;
+    right: 37px;
+}
 </style>
 </head>
 <body>
@@ -76,9 +104,15 @@
             </li>
         </ul>
         <br/>
-        <a class="btn btn-outline-secondary my-2 my-sm-0 btn-round btn-sm" href={{discord_url}}>Login With Discord</a>
     </div>
 </nav>
+
+<div class="oval"></div>
+<img class="circular--square" src="{{user_avatar_url}}" width="45" height="45"/>
+
+<div class="login-box">
+    <h6>{{user_tag}}</h6>
+</div>
   
 <div id="#features" class="heading text-center">
     <h1 class="display-5 title">It's time to use DisSlash in your server.</h1>
