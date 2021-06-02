@@ -29,6 +29,5 @@ class Oauth:
         headers = {"Authorization": f"Bearer {access_token}"}
 
         user_object = requests.get(url=url, headers=headers).json()
-        print(user_object)
         return user_object
 
